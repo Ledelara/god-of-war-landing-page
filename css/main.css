@@ -324,6 +324,7 @@ body::-webkit-scrollbar {
 @media (max-width: 560px) {
   .section-synopsis {
     padding: 1rem 0;
+    height: auto;
   }
   .section-synopsis .container {
     display: flex;
@@ -342,6 +343,77 @@ body::-webkit-scrollbar {
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
+  }
+}
+
+.section-adventure {
+  padding: 2rem;
+  background-image: url(../assets/bg-characters.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section-adventure h1 {
+  font-size: 4rem;
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+.section-adventure .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-adventure .container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 4rem;
+}
+.section-adventure .container ul .box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 45rem;
+  padding: 1rem;
+}
+.section-adventure .container ul .box img {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-adventure .container ul .box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+.section-adventure .container ul .box span {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: left;
+}
+.section-adventure .container ul .box p {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+}
+@media (max-width: 560px) {
+  .section-adventure .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-adventure .container ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-adventure .container ul .box {
+    max-width: 100%;
+  }
+  .section-adventure .container ul .box span {
+    text-align: center;
   }
 }
 
