@@ -557,4 +557,54 @@ body::-webkit-scrollbar {
   }
 }
 
+.section-weapon .container {
+  position: relative;
+  margin: 0 auto;
+}
+.section-weapon .container .overlay {
+  position: relative;
+}
+.section-weapon .container .overlay img {
+  width: 100%;
+  display: block;
+}
+.section-weapon .container .overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+.section-weapon .container .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  margin: 0 auto;
+}
+.section-weapon .container .text h1 {
+  color: white;
+  font-size: 6.4rem;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .section-weapon .container .overlay img {
+    height: 50rem;
+    object-fit: cover;
+  }
+  .section-weapon .container .text {
+    width: 80%;
+  }
+  .section-weapon .container .text h1 {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
