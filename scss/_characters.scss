@@ -82,5 +82,13 @@
         padding: 0 2rem;
       }
     }
+
+    .carroussel {
+      padding: 0 2rem;
+
+      .swiper {
+        overflow: hidden;
+      }
+    }
   }
 }
