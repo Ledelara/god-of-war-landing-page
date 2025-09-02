@@ -695,9 +695,7 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 10rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding: 10rem 20rem;
   height: 100%;
 }
 .section-dualsense .container {
