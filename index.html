@@ -15,6 +15,7 @@
   <title>God Of War</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -147,18 +148,53 @@
     </div>
   </section>
   <section class="section-video" data-aos="fade-up">
-  <div class="container">
-    <div class="video-wrapper">
-      <video autoplay muted loop playsinline>
-        <source src="https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/g/go/god-of-war-ragnarok/akqa/video/section7a-featured-desktop.mp4#t=0.04" type="video/mp4">
-      </video>
-      <img src="./assets/kratos-atreus-stactic-frame.png" alt="Kratos e Atreus">
+    <div class="container">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline>
+          <source
+            src="https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/g/go/god-of-war-ragnarok/akqa/video/section7a-featured-desktop.mp4#t=0.04"
+            type="video/mp4">
+        </video>
+        <img src="./assets/kratos-atreus-stactic-frame.png" alt="Kratos e Atreus">
+      </div>
+      <div class="description">
+        <h1>Uma tática bem executada</h1>
+        <p>Com treinamento, Kratos e Atreus desenvolveram novas sequências de ataque em sinergia para complementar os
+          pontos fortes de cada um e maximizar a eficácia em batalha.</p>
+      </div>
     </div>
-    <div class="description">
-      <h1>Uma tática bem executada</h1>
-      <p>Com treinamento, Kratos e Atreus desenvolveram novas sequências de ataque em sinergia para complementar os pontos fortes de cada um e maximizar a eficácia em batalha.</p>
+  </section>
+  <section class="section-characters" data-aos="fade-up">
+    <div class="container">
+      <div class="description" data-aos="fade-up">
+        <h1 data-aos="fade-right">Os maiores heróis dos Nove Reinos, lutando por um futuro em que acreditam</h1>
+        <img src="./assets/axel.png" alt="Axel" data-aos="fade-left">
+      </div>
+      <div class="carroussel" data-aos="fade-up">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/kratos.png" alt="Kratos">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/atreus.jpg" alt="Atreus">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/freya.jpg" alt="Atreus">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/mimir.jpg" alt="Atreus">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/thor.jpg" alt="Atreus">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/tyr.jpg" alt="Atreus">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
   </section>
 </body>
 <footer></footer>
@@ -170,5 +206,24 @@
   });
 </script>
 <script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    freeMode: true, 
+    grabCursor: true,
+    loop: false,
+    arrows: false,
+    breakpoints: {
+      1200: { slidesPerView: 4 },
+      900:  { slidesPerView: 3 },
+      600:  { slidesPerView: 2 },
+      0:    { slidesPerView: 1 }
+    }
+  });
+</script>
+
 
 </html>
