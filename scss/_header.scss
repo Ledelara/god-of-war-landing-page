@@ -6,13 +6,13 @@
   background-color: #000;
   --tw-bg-opacity: 1;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow-x: hidden;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 

@@ -4,6 +4,7 @@
   background-image: url(../assets/bg-story.png);
   background-repeat: no-repeat;
   background-position: center;
+  overflow-x: hidden;
 
   .container {
     display: flex;
@@ -54,6 +55,7 @@
       flex-direction: column-reverse;
       align-items: center;
       text-align: center;
+      max-width: 100%;
     }
 
     .resume {

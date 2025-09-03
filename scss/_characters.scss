@@ -9,7 +9,6 @@
   .container {
     display: flex;
     flex-direction: column;
-    max-width: 143.5rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 
@@ -35,20 +34,16 @@
 
   .carroussel {
     width: 100%;
-    max-width: 1200px;
-    margin: 4rem auto;
     position: relative;
+    margin: 0 auto;
 
     .swiper {
-      width: 100%;
+      width: 90%;
       padding-bottom: 3rem;
-      overflow: visible;
+      overflow: hidden;
     }
 
     .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 48rem;
       width: 100%;
       overflow: hidden;
@@ -70,24 +65,33 @@
   }
 
   @media (max-width: 600px) {
-    .description {
-      flex-direction: column;
-      padding: 0 2rem;
-      gap: 2rem;
 
-      h1 {
-        font-size: 2rem !important;
-        width: 100% !important;
-        text-transform: unset;
+    .container {
+      overflow-x: hidden;
+      
+      .description {
+        flex-direction: column;
         padding: 0 2rem;
+        gap: 2rem;
+
+        h1 {
+          font-size: 2rem !important;
+          width: 100% !important;
+          text-transform: unset;
+          padding: 0 2rem;
+        }
       }
-    }
 
-    .carroussel {
-      padding: 0 2rem;
+      .carroussel {
+        padding: 0 2rem;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
 
-      .swiper {
-        overflow: hidden;
+        .swiper {
+          overflow: hidden;
+          width: 100%;
+        }
       }
     }
   }
