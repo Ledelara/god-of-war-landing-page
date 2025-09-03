@@ -28,7 +28,6 @@ html {
 
 body {
   background: #000;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -43,7 +42,6 @@ body::-webkit-scrollbar {
   background-color: #000;
   --tw-bg-opacity: 1;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  overflow-x: hidden;
 }
 .header .container {
   display: flex;
@@ -100,7 +98,6 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 80rem;
-  overflow-x: hidden;
 }
 .section-hero .container {
   display: flex;
@@ -242,7 +239,6 @@ body::-webkit-scrollbar {
 .section-functions {
   background-color: #000;
   padding: 50px 0;
-  overflow-x: hidden;
 }
 .section-functions .container {
   margin: 0 auto;
@@ -290,7 +286,6 @@ body::-webkit-scrollbar {
   background-image: url(../assets/bg-story.png);
   background-repeat: no-repeat;
   background-position: center;
-  overflow-x: hidden;
 }
 .section-synopsis .container {
   display: flex;
@@ -355,7 +350,6 @@ body::-webkit-scrollbar {
   background-image: url(../assets/bg-characters.png);
   background-repeat: no-repeat;
   background-position: center;
-  overflow-x: hidden;
 }
 .section-adventure h1 {
   font-size: 4rem;
