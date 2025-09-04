@@ -665,6 +665,9 @@ body::-webkit-scrollbar {
   opacity: 1;
 }
 @media (max-width: 600px) {
+  .section-characters {
+    height: auto;
+  }
   .section-characters .container {
     overflow-x: hidden;
   }
