@@ -142,22 +142,22 @@
       <div class="overlay">
         <img src="./assets/legendary-weapon.png">
       </div>
-      <div class="text">
+      <div class="text" data-aos="fade-right" data-aos-anchor=".section-weapon">
         <h1>O poder das armas lendárias depende do poder de quem as empunha</h1>
       </div>
     </div>
   </section>
   <section class="section-video" data-aos="fade-up">
     <div class="container">
-      <div class="video-wrapper">
+      <div class="video-wrapper" data-aos="fade-right">
         <video autoplay muted loop playsinline>
           <source
             src="https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/g/go/god-of-war-ragnarok/akqa/video/section7a-featured-desktop.mp4#t=0.04"
             type="video/mp4">
         </video>
-        <img src="./assets/kratos-atreus-stactic-frame.png" alt="Kratos e Atreus">
+        <img src="./assets/kratos-atreus-stactic-frame.png" alt="Kratos e Atreus" data-aos="fade-up">
       </div>
-      <div class="description">
+      <div class="description" data-aos="fade-left">
         <h1>Uma tática bem executada</h1>
         <p>Com treinamento, Kratos e Atreus desenvolveram novas sequências de ataque em sinergia para complementar os
           pontos fortes de cada um e maximizar a eficácia em batalha.</p>
@@ -253,6 +253,7 @@
   const swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
     spaceBetween: 20,
+    centeredSlides: true,
     freeMode: true, 
     grabCursor: true,
     loop: false,

@@ -676,7 +676,6 @@ body::-webkit-scrollbar {
   .section-characters .container .description h1 {
     font-size: 2rem !important;
     width: 100% !important;
-    text-transform: unset;
     padding: 0 2rem;
   }
   .section-characters .container .carroussel {
